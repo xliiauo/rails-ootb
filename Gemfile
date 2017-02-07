@@ -12,6 +12,7 @@ gem "turbolinks"
 gem "uglifier"
 
 group :development, :test do
+  gem "brakeman", require: false
   gem "byebug", platform: :mri
   gem "rails_best_practices"
   gem "rake-n-bake"
