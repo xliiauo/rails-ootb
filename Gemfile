@@ -11,6 +11,7 @@ gem "turbolinks"
 gem "jbuilder"
 
 group :development, :test do
+  gem "rake-n-bake"
   gem "byebug", platform: :mri
 end
 
