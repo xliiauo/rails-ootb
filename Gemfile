@@ -13,6 +13,7 @@ gem "uglifier"
 
 group :development, :test do
   gem "brakeman", require: false
+  gem "bundler-audit"
   gem "byebug", platform: :mri
   gem "rails_best_practices"
   gem "rake-n-bake"
