@@ -7,7 +7,6 @@ task :default => %i(
   checks
 )
 
-
 # teaspoon_cli
 # spec
 # bake:coverage:check_specs

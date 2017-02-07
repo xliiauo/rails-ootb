@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 require "rake/clean"
 
-RakeNBake::Baker.log_step "Clean up test files"
+task :clean do
+  RakeNBake::Baker.log_step "Clean up test files"
+end
 
 CLEAN.include "log/**"
 CLEAN.include "tmp/cache/**"

@@ -1,0 +1,73 @@
+---
+require: rubocop-rspec
+AllCops:
+  TargetRubyVersion: 2.3
+  DisplayCopNames: true
+  Exclude:
+  - bin/*
+  - config/spring.rb
+  - db/schema.rb
+  - lib/tasks/cucumber.rake
+  - script/cucumber
+  - spec/rails_helper.rb
+  - spec/spec_helper.rb
+Documentation:
+  Enabled: false
+Lint/PercentStringArray:
+  Enabled: false
+Metrics/LineLength:
+  Max: 120
+  Exclude:
+    - Gemfile
+Metrics/MethodLength:
+  Max: 5
+  Exclude:
+  - db/migrate/*
+Performance/RedundantMerge:
+  Enabled: false
+Rails:
+  Enabled: true
+RSpec/ExampleLength:
+  Max: 10
+RSpec/NamedSubject:
+  Enabled: false
+RSpec/MessageChain:
+  Enabled: false
+RSpec/MultipleExpectations:
+  Max: 2
+RSpec/VerifiedDoubles:
+  Enabled: false
+Style/AndOr:
+  EnforcedStyle: conditionals
+Style/BlockDelimiters:
+  EnforcedStyle: semantic
+  Exclude:
+  - factories/**/*
+Style/HashSyntax:
+  Exclude:
+  - lib/tasks/*
+Style/MethodDefParentheses:
+  EnforcedStyle: require_no_parentheses
+Style/MultilineArrayBraceLayout:
+  Enabled: false
+Style/MultilineMethodCallBraceLayout:
+  Enabled: false
+Style/NestedParenthesizedCalls:
+  Enabled: false
+Style/PredicateName:
+  NamePrefixBlacklist:
+  - is_
+Style/SpaceInsideBlockBraces:
+  SpaceBeforeBlockParameters: false
+Style/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
+Style/VariableNumber:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false

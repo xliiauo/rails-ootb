@@ -2,10 +2,12 @@
 begin
   require "scss_lint/rake_task"
 
-  RakeNBake::Baker.log_step "Running SCSS Lint"
+  task :scss_lint do
+    RakeNBake::Baker.log_step "Running SCSS Lint"
 
-  SCSSLint::RakeTask.new do |t|
-    t.files = %w(app/assets)
+    SCSSLint::RakeTask.new do |t|
+      t.files = %w(app/assets)
+    end
   end
 rescue LoadError
   desc "SCSS lint not available in production"
