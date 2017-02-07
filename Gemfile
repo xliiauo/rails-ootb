@@ -13,10 +13,11 @@ gem "uglifier"
 
 group :development, :test do
   gem "brakeman", require: false
-  gem "bundler-audit"
+  gem "bundler-audit", require: false
   gem "byebug", platform: :mri
-  gem "rails_best_practices"
+  gem "rails_best_practices", require: false
   gem "rake-n-bake"
+  gem "rspec-rails"
   gem "rubocop", require: false
   gem "rubocop-rspec", require: false
   gem "scss-lint", require: false

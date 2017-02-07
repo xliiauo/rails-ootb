@@ -5,10 +5,10 @@ task :default => %i(
   clean
   db:migrate
   checks
+  spec
 )
 
 # teaspoon_cli
-# spec
 # bake:coverage:check_specs
 # cucumber
 # cucumber:ipcontrol
