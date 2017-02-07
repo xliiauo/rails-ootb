@@ -13,6 +13,7 @@ gem "uglifier"
 
 group :development, :test do
   gem "byebug", platform: :mri
+  gem "rails_best_practices"
   gem "rake-n-bake"
   gem "rubocop", require: false
   gem "rubocop-rspec", require: false
