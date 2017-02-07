@@ -12,8 +12,9 @@ gem "jbuilder"
 
 group :development, :test do
   gem "byebug", platform: :mri
-  gem "scss-lint", require: false
   gem "rake-n-bake"
+  gem "scss-lint", require: false
+  gem "slim_lint", require: false
 end
 
 group :development do
