@@ -11,8 +11,9 @@ gem "turbolinks"
 gem "jbuilder"
 
 group :development, :test do
-  gem "rake-n-bake"
   gem "byebug", platform: :mri
+  gem "scss-lint", require: false
+  gem "rake-n-bake"
 end
 
 group :development do
