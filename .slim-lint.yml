@@ -1,0 +1,31 @@
+linters:
+  LineLength:
+    max: 120
+    exclude:
+      - app/views/devise/mailer/**
+      - app/views/change_status_mailer/**
+  RuboCop:
+    ignored_cops:
+      # defaults
+      - Lint/BlockAlignment
+      - Lint/EndAlignment
+      - Lint/Void
+      - Metrics/BlockNesting
+      - Metrics/BlockLength
+      - Metrics/LineLength
+      - Style/AlignHash
+      - Style/AlignParameters
+      - Style/BlockNesting
+      - Style/FileName
+      - Style/FirstParameterIndentation
+      - Style/IfUnlessModifier
+      - Style/IndentationConsistency
+      - Style/IndentationWidth
+      - Style/Next
+      - Style/TrailingBlankLines
+      - Style/TrailingWhitespace
+      - Style/WhileUntilModifier
+      # project-specific
+      - Rails/OutputSafety # Because we can't just disable it for CSV templates
+      - Style/AlignArray
+      - Style/FrozenStringLiteralComment

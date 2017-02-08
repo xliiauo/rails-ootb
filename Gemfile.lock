@@ -276,6 +276,7 @@ DEPENDENCIES
   rubocop-rspec
   sass-rails
   scss-lint
+  slim
   slim_lint
   spring
   spring-watcher-listen
