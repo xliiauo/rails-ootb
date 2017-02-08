@@ -10,7 +10,6 @@ gem "rails", "~> 5.0.1"
 gem "sass-rails"
 gem "slim"
 gem "turbolinks"
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "uglifier"
 
 group :development, :test do

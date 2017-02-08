@@ -281,7 +281,6 @@ DEPENDENCIES
   spring
   spring-watcher-listen
   turbolinks
-  tzinfo-data
   uglifier
   web-console
 
