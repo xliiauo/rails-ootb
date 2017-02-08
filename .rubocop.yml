@@ -1,16 +1,29 @@
 ---
 require: rubocop-rspec
 AllCops:
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.4
   DisplayCopNames: true
   Exclude:
-  - bin/*
-  - config/spring.rb
-  - db/schema.rb
-  - lib/tasks/cucumber.rake
-  - script/cucumber
-  - spec/rails_helper.rb
-  - spec/spec_helper.rb
+    # Generated files
+    - bin/*
+    - config/application.rb
+    - config/boot.rb
+    - config/environment.rb
+    - config/environments/*
+    - config/initializers/assets.rb
+    - config/initializers/cookies_serializer.rb
+    - config/initializers/devise.rb
+    - config/initializers/session_store.rb
+    - config/initializers/simple_form_bootstrap.rb
+    - config/initializers/simple_form.rb
+    - config/spring.rb
+    - db/schema.rb
+    - lib/tasks/cucumber.rake
+    - Rakefile
+    - script/cucumber
+    - spec/rails_helper.rb
+    - spec/spec_helper.rb
+    - vendor/**/*
 Documentation:
   Enabled: false
 Lint/PercentStringArray:

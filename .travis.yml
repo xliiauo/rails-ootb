@@ -1,14 +1,19 @@
-branches:
-  only:
-    - master
 language: ruby
 rvm:
   - 2.4.0
-before_install:
-  - gem update --system
-cache: bundler
+
+branches:
+  only:
+    - master
+
 services:
   - postgresql
+
+cache: bundler
+
+before_install:
+  - gem update --system
+
 before_script:
   - cp config/database.example.yml config/database.yml
   - psql -c "create database rails_ootb_test;" -U postgres
