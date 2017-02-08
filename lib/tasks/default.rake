@@ -6,13 +6,12 @@ task :default => %i(
   db:migrate
   checks
   spec
+  stats
+  notes
+  success
 )
 
 # teaspoon_cli
 # bake:coverage:check_specs
 # cucumber
-# cucumber:ipcontrol
 # cucumber:wip
-# stats
-# notes
-# success
