@@ -11,4 +11,4 @@ services:
   - postgresql
 before_script:
   - cp config/database.example.yml config/database.yml
-  - psql -c 'create database rails-ootb_test;' -U postgres
+  - psql -c "create database rails_ootb_test;" -U postgres
