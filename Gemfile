@@ -9,14 +9,20 @@ gem "puma"
 gem "rails", "~> 5.0.1"
 gem "sass-rails"
 gem "turbolinks"
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "uglifier"
 
 group :development, :test do
+  gem "byebug", platform: :mri
+  gem "rake-n-bake"
+end
+
+group :test do
   gem "brakeman", require: false
   gem "bundler-audit", require: false
-  gem "byebug", platform: :mri
+  gem "cucumber-rails", require: false
+  gem "database_cleaner", require: false
   gem "rails_best_practices", require: false
-  gem "rake-n-bake"
   gem "rspec-rails"
   gem "rubocop", require: false
   gem "rubocop-rspec", require: false
@@ -30,5 +36,3 @@ group :development do
   gem "spring-watcher-listen"
   gem "web-console"
 end
-
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
