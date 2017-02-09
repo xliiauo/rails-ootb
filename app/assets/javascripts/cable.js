@@ -5,6 +5,7 @@
 //= require_self
 //= require_tree ./channels
 
+/*globals App, ActionCable */
 (function() {
   this.App || (this.App = {});
 

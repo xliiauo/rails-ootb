@@ -22,6 +22,7 @@ group :test do
   gem "bundler-audit", require: false
   gem "cucumber-rails", require: false
   gem "database_cleaner", require: false
+  gem "jshint"
   gem "rails_best_practices", require: false
   gem "rspec-rails"
   gem "rubocop", require: false
