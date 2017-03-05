@@ -5,6 +5,7 @@ machine:
 dependencies:
   pre:
     - gem update --system
+    - gem update bundler
 
 test:
   override:
