@@ -1,0 +1,11 @@
+machine:
+  ruby:
+    version: 2.4.0
+
+dependencies:
+  pre:
+    - gem update --system
+
+test:
+  override:
+    - bundle exec rake
